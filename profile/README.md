@@ -59,8 +59,8 @@ recommended entry point if you want one process that orchestrates the others.
 
 ## License
 
-MIT on the editor and frontend codebases. Apache-2.0 on the backend gateways.
-Univer fork follows upstream Apache-2.0.
+**Apache-2.0** across the suite — sheets, docs, drive, and the univer-revamp
+fork. Permissive use; you can self-host and modify freely.
 
 ## Contact
 
