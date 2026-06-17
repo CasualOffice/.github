@@ -1,43 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Casual Office">
-  <title>Casual Office (dark theme variant)</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Casual Office (dark theme)">
+  <title>Casual Office</title>
   <!--
-    Dark-theme variant: the slate background lightens to a near-black so the
-    mark reads against GitHub's dark UI without the surrounding chrome bleeding
-    through. Tile + accent colors stay identical.
+    Dark-theme variant: deep slate background so the mark reads against
+    GitHub's dark UI. The "co" monogram switches to cyan-tinted white so
+    the strokes have a touch of warmth on near-black.
   -->
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#0A111E"/>
       <stop offset="100%" stop-color="#16243A"/>
     </linearGradient>
-    <linearGradient id="sheets" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#22D3EE"/>
-      <stop offset="100%" stop-color="#0E7490"/>
-    </linearGradient>
-    <linearGradient id="docs" x1="0" y1="0" x2="0" y2="1">
+    <radialGradient id="highlight" cx="0.3" cy="0.25" r="0.85">
+      <stop offset="0%" stop-color="rgba(34,211,238,0.18)"/>
+      <stop offset="100%" stop-color="rgba(34,211,238,0)"/>
+    </radialGradient>
+    <linearGradient id="stroke" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#67E8F9"/>
-      <stop offset="100%" stop-color="#0891B2"/>
-    </linearGradient>
-    <linearGradient id="drive" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#5EEAD4"/>
-      <stop offset="100%" stop-color="#0D9488"/>
-    </linearGradient>
-    <linearGradient id="slides" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#FB923C"/>
-      <stop offset="100%" stop-color="#B91C1C"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
     </linearGradient>
   </defs>
 
   <rect width="512" height="512" rx="96" fill="url(#bg)"/>
-  <rect x="16" y="16" width="480" height="480" rx="80" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+  <rect width="512" height="512" rx="96" fill="url(#highlight)"/>
 
-  <g>
-    <rect x="108" y="108" width="144" height="144" rx="24" fill="url(#sheets)"><title>Sheets</title></rect>
-    <rect x="260" y="108" width="144" height="144" rx="24" fill="url(#docs)"><title>Docs</title></rect>
-    <rect x="108" y="260" width="144" height="144" rx="24" fill="url(#drive)"><title>Drive</title></rect>
-    <rect x="260" y="260" width="144" height="144" rx="24" fill="url(#slides)"><title>Slides</title></rect>
-  </g>
+  <rect x="14" y="14" width="484" height="484" rx="84"
+        fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
 
-  <circle cx="256" cy="256" r="22" fill="#0A111E"/>
-  <circle cx="256" cy="256" r="10" fill="#22D3EE"/>
+  <path d="M 278 178 A 110 110 0 1 0 278 334"
+        fill="none" stroke="url(#stroke)" stroke-width="44"
+        stroke-linecap="round"/>
+
+  <circle cx="402" cy="256" r="60"
+          fill="none" stroke="url(#stroke)" stroke-width="44"/>
 </svg>

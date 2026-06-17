@@ -1,61 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Casual Office">
   <title>Casual Office</title>
   <!--
-    Mark: four overlapping rounded tiles on a deep slate background, each
-    in one of the suite's product accent colors. Reads as "a set of tools"
-    at favicon size; reads as a confident geometric monogram at hero size.
-    Crops cleanly under GitHub's circular avatar mask.
+    Monogram mark: a lowercase "co" reduced to two geometric strokes.
+    The open "c" (3/4 arc) faces the closed "o" — together they read as
+    "co" at any size and stay legible under GitHub's circular avatar mask.
   -->
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0F172A"/>
-      <stop offset="100%" stop-color="#1E293B"/>
+      <stop offset="0%" stop-color="#0E7490"/>
+      <stop offset="55%" stop-color="#0891B2"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
     </linearGradient>
-    <linearGradient id="sheets" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#1597BA"/>
-      <stop offset="100%" stop-color="#0E7490"/>
-    </linearGradient>
-    <linearGradient id="docs" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#22B8D8"/>
-      <stop offset="100%" stop-color="#0891B2"/>
-    </linearGradient>
-    <linearGradient id="drive" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#34D399"/>
-      <stop offset="100%" stop-color="#0D9488"/>
-    </linearGradient>
-    <linearGradient id="slides" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#F97316"/>
-      <stop offset="100%" stop-color="#B91C1C"/>
-    </linearGradient>
+    <radialGradient id="highlight" cx="0.3" cy="0.25" r="0.85">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.18)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
   </defs>
 
-  <!-- Background -->
+  <!-- Background tile. GitHub crops to a circle, but the rounded square keeps
+       the artwork balanced when used as a square favicon / og image too. -->
   <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+  <rect width="512" height="512" rx="96" fill="url(#highlight)"/>
 
-  <!-- Subtle inner glow ring -->
-  <rect x="16" y="16" width="480" height="480" rx="80" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="2"/>
+  <!-- Subtle hairline ring — premium nod, reads as a window frame. -->
+  <rect x="14" y="14" width="484" height="484" rx="84"
+        fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="1.5"/>
 
-  <!-- 2x2 product tile grid, slightly offset to feel "stacked" -->
-  <g>
-    <!-- Sheets — top-left -->
-    <rect x="108" y="108" width="144" height="144" rx="24" fill="url(#sheets)">
-      <title>Sheets</title>
-    </rect>
-    <!-- Docs — top-right -->
-    <rect x="260" y="108" width="144" height="144" rx="24" fill="url(#docs)">
-      <title>Docs</title>
-    </rect>
-    <!-- Drive — bottom-left -->
-    <rect x="108" y="260" width="144" height="144" rx="24" fill="url(#drive)">
-      <title>Drive</title>
-    </rect>
-    <!-- Slides (placeholder for future product) — bottom-right -->
-    <rect x="260" y="260" width="144" height="144" rx="24" fill="url(#slides)">
-      <title>Slides</title>
-    </rect>
-  </g>
+  <!-- "c" — 3/4 arc, mouth opens to the right. -->
+  <path d="M 278 178 A 110 110 0 1 0 278 334"
+        fill="none" stroke="#FFFFFF" stroke-width="44"
+        stroke-linecap="round"/>
 
-  <!-- Center connector dot — visual cue that the four products are one suite -->
-  <circle cx="256" cy="256" r="22" fill="#0F172A"/>
-  <circle cx="256" cy="256" r="10" fill="#22D3EE"/>
+  <!-- "o" — closed ring, sits in the c's mouth. -->
+  <circle cx="402" cy="256" r="60"
+          fill="none" stroke="#FFFFFF" stroke-width="44"/>
 </svg>
