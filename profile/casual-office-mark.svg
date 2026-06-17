@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Casual Office">
+  <title>Casual Office</title>
+  <!--
+    Mark: four overlapping rounded tiles on a deep slate background, each
+    in one of the suite's product accent colors. Reads as "a set of tools"
+    at favicon size; reads as a confident geometric monogram at hero size.
+    Crops cleanly under GitHub's circular avatar mask.
+  -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="sheets" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1597BA"/>
+      <stop offset="100%" stop-color="#0E7490"/>
+    </linearGradient>
+    <linearGradient id="docs" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22B8D8"/>
+      <stop offset="100%" stop-color="#0891B2"/>
+    </linearGradient>
+    <linearGradient id="drive" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="100%" stop-color="#0D9488"/>
+    </linearGradient>
+    <linearGradient id="slides" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F97316"/>
+      <stop offset="100%" stop-color="#B91C1C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+
+  <!-- Subtle inner glow ring -->
+  <rect x="16" y="16" width="480" height="480" rx="80" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="2"/>
+
+  <!-- 2x2 product tile grid, slightly offset to feel "stacked" -->
+  <g>
+    <!-- Sheets — top-left -->
+    <rect x="108" y="108" width="144" height="144" rx="24" fill="url(#sheets)">
+      <title>Sheets</title>
+    </rect>
+    <!-- Docs — top-right -->
+    <rect x="260" y="108" width="144" height="144" rx="24" fill="url(#docs)">
+      <title>Docs</title>
+    </rect>
+    <!-- Drive — bottom-left -->
+    <rect x="108" y="260" width="144" height="144" rx="24" fill="url(#drive)">
+      <title>Drive</title>
+    </rect>
+    <!-- Slides (placeholder for future product) — bottom-right -->
+    <rect x="260" y="260" width="144" height="144" rx="24" fill="url(#slides)">
+      <title>Slides</title>
+    </rect>
+  </g>
+
+  <!-- Center connector dot — visual cue that the four products are one suite -->
+  <circle cx="256" cy="256" r="22" fill="#0F172A"/>
+  <circle cx="256" cy="256" r="10" fill="#22D3EE"/>
+</svg>
