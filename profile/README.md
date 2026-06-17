@@ -1,8 +1,8 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset=".github/profile/casual-office-mark-dark.svg">
-  <img alt="Casual Office" src=".github/profile/casual-office-mark.svg" width="128" height="128">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CasualOffice/.github/main/profile/casual-office-mark-dark.svg">
+  <img alt="Casual Office" src="https://raw.githubusercontent.com/CasualOffice/.github/main/profile/casual-office-mark.svg" width="128" height="128">
 </picture>
 
 # Casual Office

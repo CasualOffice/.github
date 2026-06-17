@@ -1,37 +1,45 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Casual Office">
   <title>Casual Office</title>
   <!--
-    Monogram mark: a lowercase "co" reduced to two geometric strokes.
-    The open "c" (3/4 arc) faces the closed "o" — together they read as
-    "co" at any size and stay legible under GitHub's circular avatar mask.
+    Mark: heavy "CO" wordmark over a deep teal → cyan gradient. The C
+    sits in a 270° open ring with rounded terminals; the O is a closed
+    ring at the same stroke weight. Both confident, geometric, and
+    legible from a 16px favicon to a hero takeover. Inner frame +
+    radial highlight + subtle top sheen give the mark a premium feel
+    without leaning on photographic effects.
   -->
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#0E7490"/>
       <stop offset="55%" stop-color="#0891B2"/>
-      <stop offset="100%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#1597BA"/>
     </linearGradient>
-    <radialGradient id="highlight" cx="0.3" cy="0.25" r="0.85">
-      <stop offset="0%" stop-color="rgba(255,255,255,0.18)"/>
+    <radialGradient id="hi" cx="0.28" cy="0.22" r="0.9">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.22)"/>
+      <stop offset="60%" stop-color="rgba(255,255,255,0.04)"/>
       <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
     </radialGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.10)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
   </defs>
 
-  <!-- Background tile. GitHub crops to a circle, but the rounded square keeps
-       the artwork balanced when used as a square favicon / og image too. -->
+  <!-- Background tile -->
   <rect width="512" height="512" rx="96" fill="url(#bg)"/>
-  <rect width="512" height="512" rx="96" fill="url(#highlight)"/>
+  <rect width="512" height="512" rx="96" fill="url(#hi)"/>
+  <rect width="512" height="256" rx="96" fill="url(#sheen)"/>
 
-  <!-- Subtle hairline ring — premium nod, reads as a window frame. -->
-  <rect x="14" y="14" width="484" height="484" rx="84"
-        fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="1.5"/>
+  <!-- Inner hairline frame for premium feel -->
+  <rect x="14" y="14" width="484" height="484" rx="82"
+        fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
 
-  <!-- "c" — 3/4 arc, mouth opens to the right. -->
-  <path d="M 278 178 A 110 110 0 1 0 278 334"
+  <!-- C — open ring with rounded terminals -->
+  <path d="M 224 192 A 90 90 0 1 0 224 320"
         fill="none" stroke="#FFFFFF" stroke-width="44"
         stroke-linecap="round"/>
 
-  <!-- "o" — closed ring, sits in the c's mouth. -->
-  <circle cx="402" cy="256" r="60"
+  <!-- O — closed ring -->
+  <circle cx="380" cy="256" r="68"
           fill="none" stroke="#FFFFFF" stroke-width="44"/>
 </svg>
