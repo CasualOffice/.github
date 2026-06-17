@@ -22,9 +22,9 @@ no vendor lock-in.
 
 | Product | What it is | Status |
 | --- | --- | --- |
-| **[sheets](https://github.com/CasualOffice/sheets)** | Web spreadsheet with .xlsx fidelity and y-websocket co-editing. React + Univer + TypeScript on the front, Bun-based snapshot worker on the back. | live demo at [sheet.schnsrw.live](https://sheet.schnsrw.live) |
-| **[docs](https://github.com/CasualOffice/docs)** | WYSIWYG .docx editor with ProseMirror schema and OOXML-preserving layout. Real-time co-editing via Yjs; Go gateway behind it. | live demo at [doc.schnsrw.live](https://doc.schnsrw.live) |
-| **[drive](https://github.com/CasualOffice/drive)** | Self-hosted file manager that opens .xlsx and .docx inline in the editors above. Rust + Axum + OpenDAL + WOPI. | live demo at [drive.schnsrw.live](https://drive.schnsrw.live) |
+| **[sheets](https://github.com/CasualOffice/sheets)** | Web spreadsheet with .xlsx fidelity and y-websocket co-editing. React + Univer + TypeScript on the front, Bun-based snapshot worker on the back. | live demo at [sheet.casualoffice.org](https://sheet.casualoffice.org) |
+| **[docs](https://github.com/CasualOffice/docs)** | WYSIWYG .docx editor with ProseMirror schema and OOXML-preserving layout. Real-time co-editing via Yjs; Go gateway behind it. | live demo at [docs.casualoffice.org](https://docs.casualoffice.org) |
+| **[drive](https://github.com/CasualOffice/drive)** | Self-hosted file manager that opens .xlsx and .docx inline in the editors above. Rust + Axum + OpenDAL + WOPI. | live demo at [drive.casualoffice.org](https://drive.casualoffice.org) |
 | **[univer-revamp](https://github.com/CasualOffice/univer-revamp)** | Internal fork of the Univer Sheets engine with patches the sheets product depends on. | tracked upstream |
 
 ## What it replaces
