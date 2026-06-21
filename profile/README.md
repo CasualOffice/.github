@@ -57,6 +57,13 @@ Each product ships a Docker image and a docker-compose for the demo stack —
 check that product's README for the current step-by-step. Drive is the
 recommended entry point if you want one process that orchestrates the others.
 
+## Contributing
+
+We welcome contributors — the whole suite is Apache-2.0 and built in the open.
+Bug reports, feature ideas, and pull requests are all welcome. For larger
+changes, open an issue to discuss first; otherwise feel free to raise a PR
+against the relevant repo. See each repo's `CONTRIBUTING` guide to get started.
+
 ## License
 
 **Apache-2.0** across the suite — sheets, docs, drive, and the univer-revamp
