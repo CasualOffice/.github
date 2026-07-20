@@ -27,6 +27,21 @@ no vendor lock-in.
 | **[drive](https://github.com/CasualOffice/drive)** | Self-hosted file manager that opens .xlsx and .docx inline in the editors above. Rust + Axum + OpenDAL + WOPI. | live demo at [drive.casualoffice.org](https://drive.casualoffice.org) |
 | **[univer-revamp](https://github.com/CasualOffice/univer-revamp)** | Internal fork of the Univer Sheets engine with patches the sheets product depends on. | tracked upstream |
 
+### Also from Casual Office
+
+Beyond the document apps, we're building a remote-access platform — a different kind of
+product, but the same open, self-hostable, security-first philosophy:
+
+| Product | What it is | Status |
+| --- | --- | --- |
+| **[RASystem](https://github.com/CasualOffice/RASystem)** | **Casual RAS** — a white-label, embeddable remote-access platform. Vendors embed it to add secure screen viewing, remote keyboard/mouse control, clipboard/file/chat, and multi-user collaboration under their own brand. Rust core + a desktop app (share + connect); SDKs later. Peer-to-peer over iroh/QUIC. | alpha, at [ras.casualoffice.org](https://ras.casualoffice.org) |
+
+**Casual RAS** is security-first by design: signed PASETO session grants, per-message
+capability enforcement, local consent before any access, an always-visible in-session
+indicator, an emergency stop, and a hash-chained audit journal. It is **alpha** —
+hardening toward production, with on-device Linux/Windows verification, signed installers,
+and SDK extraction still in progress. Not yet production-ready.
+
 ## What it replaces
 
 If you've used Google Workspace or Microsoft 365 and want the same UX without the
