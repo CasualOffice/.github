@@ -99,12 +99,36 @@ Each product ships a Docker image and a compose file for the demo stack — chec
 product's README for the current step-by-step. OpenCalc gets you co-editing over a link with
 two containers, and a cluster with one more compose file.
 
-## Contributing
+## Contributing — and joining
 
-We welcome contributors — the whole suite is Apache-2.0 and built in the open. Bug reports,
-feature ideas, and pull requests are all welcome. For larger changes, open an issue to
-discuss first; otherwise raise a PR against the relevant repo. See each repo's
-`CONTRIBUTING` guide to get started.
+**Contributors are genuinely welcome here, and the door to the organisation is open.**
+The whole suite is Apache-2.0 and built in the open: every design document, tracker row and
+decision lives in the repository, so there is no private context you would need to be handed
+before you could start.
+
+**Getting started.** Bug reports, feature ideas and pull requests are all welcome. Pick a repo
+above, read its `CONTRIBUTING` guide, and open a PR. For anything larger than a fix, open an
+issue first so the approach can be agreed before you spend the evening on it. If you are not
+sure where to start, say so — pointing someone at the right first task is not an imposition.
+
+**Joining as a member.** You do not need to be invited to start, and you do not need years of
+history to be asked in. The path is short and deliberately unceremonious:
+
+1. Land a couple of merged pull requests on any repo — size matters far less than care.
+2. Say you would like to join, in an issue or by email.
+3. You get an invitation to the organisation.
+
+Members get triage rights, a say in the direction of the project they work on, and the ability
+to review others' work. Nobody is asked to commit to a schedule; people contribute at whatever
+pace their life allows, and stepping back for a while is normal rather than a resignation.
+
+**Just want to talk first?** Email **[sachin@casualoffice.org](mailto:sachin@casualoffice.org)** —
+about contributing, about joining, about whether an idea is worth building, or about using any
+of this at your company. Questions from people who have not written a line of code yet are
+welcome too.
+
+Security reports go to `security@casualoffice.org` rather than a public issue; code-of-conduct
+concerns go to `conduct@casualoffice.org`.
 
 ## License
 
@@ -114,4 +138,5 @@ components preserve upstream MIT attribution where required.
 ## Contact
 
 - Web: [casualoffice.org](https://casualoffice.org)
+- Email: [sachin@casualoffice.org](mailto:sachin@casualoffice.org) — contributing, membership, or using this at work
 - Issues + discussions live in each repo above.
